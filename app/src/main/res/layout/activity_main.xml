@@ -1,0 +1,50 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context=".MainActivity"
+    android:orientation="vertical"
+    >
+        <TextView
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="@string/un"
+            android:textColor="#000000"
+            android:padding="5dp"
+           />
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/un"
+            android:id="@+id/usernameinput"
+            android:padding="5dp"
+            android:inputType="textPersonName"
+            android:textColor="#000000"/>
+        <TextView
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="@string/p"
+            android:textColor="#000000"
+            android:padding="5dp"
+            />
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/p"
+            android:id="@+id/passwordinput"
+            android:padding="5dp"
+            android:textColor="#000000"
+            android:inputType="textPassword" />
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/lg"
+            android:padding="5dp"
+            android:textColor="#000000"
+            android:id="@+id/loginButton"
+            android:onClick="Login"/>
+</LinearLayout>

@@ -1,0 +1,62 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:orientation="vertical"
+    tools:context="com.anand.vishal.billingsystem.HomeActivity">
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/csbs"
+        android:textColor="#000000"
+        android:padding="5dp"
+        android:paddingBottom="5dp"
+        android:textSize="25sp"/>
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/AddCategory"
+            android:padding="20dp"
+            android:layout_weight="1"
+            android:onClick="AddCategory"
+            />
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/NewCustomer"
+            android:layout_weight="1"
+            android:padding="20dp"
+            android:onClick="AddCustomer"/>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/AddProduct"
+            android:layout_weight="1"
+            android:onClick="AddProduct"
+            android:padding="20dp"
+            />
+      
+
+    </LinearLayout>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/back"
+        android:gravity="center"
+        android:layout_gravity="center_vertical"
+        android:padding="20dp"
+        android:onClick="BackToLogin"/>
+</LinearLayout>
